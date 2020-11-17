@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Test 4</title>
+  </head>
+  <body>
+    <nav id="elemhideNavbar">
+      <div class="nav-wrapper teal lighten-2" >
+        <a href="#!" class="brand-logo center">This is a Navbar</a>
+      </div>
+    </nav>
+    <div class="row container" >
+      <label><input type="checkbox" id="checkAll" onclick="checkAll()"><span>Hide all</span> </label>
+      <label><input class="checkboxes" type="checkbox" id="hideH1" onclick="changeVisability(id)"> <span>Hide text </span> </label>
+      <label><input class="checkboxes" type="checkbox" id="hideBut" onclick="changeVisability(id)"><span> Hide button </span> </label>
+      <label><input class="checkboxes" type="checkbox" id="hideNavbar" onclick="changeVisability(id)"><span> Hide navbar </span></label>
+      <label><input class="checkboxes" type="checkbox" id="hideLink" onclick="changeVisability(id)"><span> Hide link </span></label>
+      <label><input class="checkboxes" type="checkbox" id="hidePicture" onclick="changeVisability(id)"><span> Hide picture </span></label>
+      <label><input class="checkboxes" type="checkbox" id="hideCard" onclick="changeVisability(id)"><span> Hide card </span></label>
+    </div>
+    <div class="row container" id="elemhideCard">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img id="elemhidePicture" src="https://i.stack.imgur.com/z05Sr.png">
+            <span class="card-title">This is a title</span>
+          </div>
+          <div class="card-content">
+            <p id="elemhideH1">This is a text</p>
+          </div>
+          <div class="card-action">
+            <a id="elemhideLink" href="#">This is a link</a>
+          </div>
+          <div>
+            <button class="waves-effect waves-light btn-large" id="elemhideBut">This is a button</button>
+          </div>
+        </div>
+      </div>
+    </div>            
+  </body>
+</html>
+
+<script src="index.js"></script>
+
+<style>
+.container{
+margin-top: 20px;
+margin-left: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+</style>
